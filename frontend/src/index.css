@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --gold: #c5a059;
+        --gold-light: #dfba73;
+        --gold-bright: #f4d085;
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --radius: 0.5rem;
+    }
+    * {
+        @apply border-border;
+    }
+    body {
+        margin: 0;
+        background-color: #050811;
+        color: #f8fafc;
+        font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont,
+            "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background: rgba(223, 186, 115, 0.92);
+        color: #070b14;
+    }
+}
+
+@layer utilities {
+    .text-gold-gradient {
+        background: linear-gradient(105deg, #dfba73 0%, #f4d085 42%, #b38938 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    .gold-btn {
+        background: linear-gradient(105deg, #c5a059 0%, #dfba73 50%, #b38938 100%);
+        color: #0b1120;
+        box-shadow: 0 0 25px rgba(197, 160, 89, 0.28);
+        transition: filter 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .gold-btn:hover {
+        filter: brightness(1.12);
+        box-shadow: 0 0 40px rgba(223, 186, 115, 0.45);
+        transform: translateY(-2px);
+    }
+    .ghost-btn {
+        border: 1px solid rgba(197, 160, 89, 0.35);
+        color: #dfba73;
+        transition: border-color 0.4s ease, background-color 0.4s ease,
+            transform 0.4s ease;
+    }
+    .ghost-btn:hover {
+        border-color: rgba(244, 208, 133, 0.7);
+        background-color: rgba(197, 160, 89, 0.08);
+        transform: translateY(-2px);
+    }
+    .hairline {
+        border-color: rgba(197, 160, 89, 0.22);
+    }
+    .eyebrow {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.6875rem;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: rgba(223, 186, 115, 0.85);
+    }
+}
+
+/* film grain overlay */
+.grain-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    pointer-events: none;
+    opacity: 0.045;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 220px 220px;
+}
+
+/* lenis */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+/* dark map treatment */
+.map-dark {
+    filter: invert(0.92) hue-rotate(185deg) grayscale(0.25) contrast(0.92)
+        brightness(0.95);
+}

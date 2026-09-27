@@ -1,0 +1,168 @@
+{
+  "project_name": "IF Enfermagem — Dr. Ismael Frota",
+  "tagline": "Atendimento & Consultoria em Enfermagem de Alto Padrão",
+  "location": "Maracanaú, Ceará, Brazil",
+  "language": "pt-BR",
+  "theme_strategy": {
+    "default_mode": "dark",
+    "aesthetic": "Quiet Luxury Clinical / Haute Healthcare",
+    "description": "Deep obsidian navy (#070B14 and #0B1120) with handcrafted champagne gold metallic accents (#C5A059, #DFBA73, #99732E), subtle hairline borders (border-amber-500/20), warm ambient lighting and editorial typography. Translates the gold square-frame 'IF' monogram and Dr. Ismael Frota identity into an award-worthy digital experience."
+  },
+  "typography": {
+    "font_pairings": {
+      "headings": "'Cormorant Garamond', 'Playfair Display', Georgia, serif",
+      "body": "'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif",
+      "mono_accent": "'JetBrains Mono', 'IBM Plex Mono', monospace"
+    },
+    "scale": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight leading-[1.08]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-serif tracking-tight text-slate-100",
+      "subsection_h3": "text-xl sm:text-2xl font-serif text-amber-200/90",
+      "card_title": "text-lg sm:text-xl font-medium tracking-normal text-slate-100",
+      "overline": "text-xs uppercase tracking-[0.25em] font-mono text-amber-400/80",
+      "body_lead": "text-base sm:text-lg text-slate-300 font-light leading-relaxed",
+      "body_regular": "text-sm sm:text-base text-slate-400 leading-relaxed font-normal"
+    },
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "colors": {
+    "base": {
+      "background_primary": "#050811",
+      "background_secondary": "#090F1E",
+      "background_elevated": "#0F172A",
+      "background_surface": "rgba(15, 23, 42, 0.75)"
+    },
+    "gold_palette": {
+      "primary": "#C5A059",
+      "light": "#DFBA73",
+      "bright": "#F4D085",
+      "muted": "#99732E",
+      "glow": "rgba(197, 160, 89, 0.15)",
+      "border_subtle": "rgba(197, 160, 89, 0.25)",
+      "border_highlight": "rgba(223, 186, 115, 0.55)",
+      "gradient_text": "bg-gradient-to-r from-[#DFBA73] via-[#F4D085] to-[#B38938] bg-clip-text text-transparent",
+      "gradient_button": "bg-gradient-to-r from-[#C5A059] via-[#DFBA73] to-[#B38938] text-slate-950 hover:brightness-110 shadow-[0_0_25px_rgba(197,160,89,0.3)] transition-all"
+    },
+    "slate_neutrals": {
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#CBD5E1",
+      "text_muted": "#94A3B8",
+      "border_dark": "rgba(255, 255, 255, 0.08)"
+    },
+    "status": {
+      "success_badge": "bg-emerald-950/60 text-emerald-300 border-emerald-500/30",
+      "rating_gold": "#FBBF24"
+    }
+  },
+  "image_urls": {
+    "hero_doctor": {
+      "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBoZWFsdGhjYXJlJTIwY29uc3VsdGF0aW9uJTIwbHV4dXJ5fGVufDB8fHx8MTc5MDUyNDM2MHww&ixlib=rb-4.1.0&q=85",
+      "description": "Dr. Ismael Frota portrait representation — clinical authority, white coat, warm focused presence with glasses.",
+      "category": "Hero / About Section Doctor Highlight"
+    },
+    "caring_nurse_hands": {
+      "url": "https://images.unsplash.com/photo-1749065311606-fa115df115af?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHw0fHxudXJzZSUyMGNhcmluZyUyMHBhdGllbnQlMjBob3NwaXRhbHxlbnwwfHx8fDE3OTA1MjQzNjB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Empathy and humanized nursing touch — holding patient hand with deep care.",
+      "category": "Atendimento Humanizado / Atendimento Domiciliar Service Card"
+    },
+    "lecture_training": {
+      "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbGVjdHVyZSUyMHRyYWluaW5nJTIwc2VtaW5hcnxlbnwwfHx8fDE3OTA1MjQzNjB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Auditorium medical lecture, training seminar and professional education session.",
+      "category": "Cursos & Capacitação / Palestras e Eventos Service Card"
+    },
+    "clinical_consultation": {
+      "url": "https://images.unsplash.com/photo-1581056771107-24ca5f033842?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwyfHxudXJzZSUyMGNhcmluZyUyMHBhdGllbnQlMjBob3NwaXRhbHxlbnwwfHx8fDE3OTA1MjQzNjB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Doctor discussing tailored healthcare plan with patient in a serene clinical setting.",
+      "category": "Consultoria em Saúde / About Experience"
+    }
+  },
+  "brand_assets": {
+    "monogram_svg": "<div className='w-12 h-12 rounded-lg border border-[#DFBA73]/60 bg-gradient-to-br from-[#121B2E] to-[#0A0F1D] flex items-center justify-center shadow-[0_0_15px_rgba(197,160,89,0.25)]'><span className='font-serif text-xl tracking-wider font-semibold text-[#F4D085]'>IF</span></div>",
+    "full_brand_name": "DR. ISMAEL FROTA",
+    "full_subtitle": "ATENDIMENTO & CONSULTORIA EM ENFERMAGEM",
+    "whatsapp_phone": "(85) 98888-5910",
+    "whatsapp_url": "https://wa.me/5585988885910?text=Ol%C3%A1%2C%20Dr.%20Ismael%20Frota!%20Gostaria%20de%20agendar%20uma%20consulta%20ou%20consultoria.",
+    "address_full": "EDIF 2 - Av. Yolanda Pontes Vidal Queiroz, 57 - SL 218 - Timbó, Maracanaú - CE, 61936-000",
+    "opening_hours": "Segunda a Sexta a partir das 09:00",
+    "instagram_handle": "@dr.ismaelfrota",
+    "instagram_url": "https://instagram.com/dr.ismaelfrota",
+    "rating_stars": 5.0,
+    "review_count": 7
+  },
+  "page_sections_architecture": [
+    {
+      "id": "header",
+      "component_path": "/app/frontend/src/components/Header.js",
+      "name": "Luxury Floating Navbar",
+      "description": "Sticky blurred header with deep obsidian crystal background (backdrop-blur-xl bg-[#070B14]/85), gold monogram square logo, Dr. Ismael Frota signature, desktop nav anchors (Início, Serviços, Sobre, Depoimentos, Contato), phone badge, and Agendar Consulta button."
+    },
+    {
+      "id": "hero",
+      "component_path": "/app/frontend/src/components/Hero.js",
+      "name": "Kinetic Hero with Line-by-Line Reveal",
+      "description": "Dramatic dark background with subtle ambient gold spotlights. Overline: 'ATENDIMENTO & CONSULTORIA DE EXCELÊNCIA'. Main kinetic title revealed line by line: 'A nobreza do cuidar com rigor científico e sofisticação'. High-end dual CTAs: 'Agendar Consulta Exclusiva' (WhatsApp) + 'Conhecer Especialidades'. Floating badges: 'Avaliação 5.0 ★ Google' and 'Maracanaú - CE'."
+    },
+    {
+      "id": "marquee",
+      "component_path": "/app/frontend/src/components/EditorialMarquee.js",
+      "name": "Slow Editorial Ribbon Marquee",
+      "description": "Low-contrast, velvet-smooth horizontal drift in serif + mono text with gold diamond separators: 'CUIDADO HUMANIZADO ◆ CONSULTORIA ESTRATÉGICA EM SAÚDE ◆ RIGOR TÉCNICO ◆ CAPACITAÇÃO PROFISSIONAL CONTINUADA ◆ ATENDIMENTO DOMICILIAR VIP ◆ MARACANAÚ & REGIÃO METROPOLITANA'."
+    },
+    {
+      "id": "services",
+      "component_path": "/app/frontend/src/components/ServicesBento.js",
+      "name": "Asymmetric Bento Grid with 6 Services",
+      "description": "Award-worthy 6-service grid: 1) Atendimentos de Enfermagem (Dominant visual hero card), 2) Consultoria em Saúde (Strategic clinical guidance), 3) Cursos e Capacitação (Certificações e workshops), 4) Palestras e Eventos (Keynotes corporativos), 5) Capacitação Profissional (Educação continuada para equipes), 6) Atendimento Domiciliar (Home care personalizado e acolhedor). Interactive cards with gold gradient hover glow and modal details."
+    },
+    {
+      "id": "about",
+      "component_path": "/app/frontend/src/components/AboutSection.js",
+      "name": "Dr. Ismael Frota - Clinical Authority & Vision",
+      "description": "Editorial split layout. Left: Portrait frame with gold border corners and credentials badge (COREN-CE, Especialista). Right: Compelling narrative of Dr. Ismael Frota, combining human warmth with uncompromising clinical excellence in Maracanaú, Ceará."
+    },
+    {
+      "id": "testimonials",
+      "component_path": "/app/frontend/src/components/TestimonialsGoogle.js",
+      "name": "Official Google Reviews Showcase (5.0 / 7 Avaliações)",
+      "description": "Google verified review badge with 5 golden stars. Highlight cards featuring real verified patient testimonials: Ismael Frota ('Atendimento com excelência em tudo que faz.') and Maria Taíssa ('Minha experiência foi simplesmente incrível!') with verified patient badge and interactive quote accents."
+    },
+    {
+      "id": "contact_location",
+      "component_path": "/app/frontend/src/components/ContactSection.js",
+      "name": "Concierge Contact & Maracanaú Location",
+      "description": "Complete contact suite: Address (EDIF 2 - Av. Yolanda Pontes Vidal Queiroz, 57 - SL 218 - Timbó, Maracanaú - CE, 61936-000) with interactive Google Maps embed, Direct WhatsApp booking launcher, phone click-to-call ((85) 98888-5910), working hours (Abre segunda-feira às 09:00), and an intuitive inquiry card."
+    },
+    {
+      "id": "footer",
+      "component_path": "/app/frontend/src/components/Footer.js",
+      "name": "Luxury Monogram Footer",
+      "description": "Oversized 'IF' watermark, legal disclosure, COREN-CE clinical ethical compliance statement, quick links, Instagram integration (@dr.ismaelfrota), and smooth scroll-to-top trigger."
+    }
+  ],
+  "motion_and_interactions": {
+    "smooth_scroll": "Lenis smooth scroll integration via React useEffect hook with custom requestAnimationFrame",
+    "scroll_reveal": "Framer Motion variants with staggerChildren, y: 30 to y: 0, opacity: 0 to 1, ease: [0.16, 1, 0.3, 1]",
+    "card_hover": "Hover glow border transition with subtle scale (1.015) and light bleed",
+    "modals": "Shadcn/Dialog or Framer Motion popup for service details and quick appointment modal"
+  },
+  "test_id_conventions": {
+    "header_nav": "nav-header",
+    "whatsapp_hero_cta": "hero-whatsapp-button",
+    "services_grid": "services-bento-grid",
+    "service_card_prefix": "service-card-",
+    "about_section": "about-doctor-section",
+    "testimonials_section": "google-reviews-section",
+    "contact_whatsapp_cta": "contact-whatsapp-button",
+    "contact_phone_link": "contact-phone-link",
+    "address_card": "contact-address-card",
+    "instagram_link": "footer-instagram-link"
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "no_transparent_header": "Header MUST use high opacity crystal background (bg-[#070B14]/85 backdrop-blur-xl border-b border-amber-500/15) so links never clash with content.",
+    "typography_rules": "Never use Inter for headings. Use Cormorant Garamond / Playfair serif for all H1, H2, H3 to match the high-end medical consultancy tone.",
+    "color_discipline": "No bright neon blues or generic SaaS purple. Stick strictly to Obsidian Navy, Deep Slate, and Gold Champagne metallic accents.",
+    "spacing_standard": "Generous luxury spacing: py-24 to py-32 for sections, px-6 to px-12 for containers.",
+    "lenis_scrolling": "Install and configure Lenis for seamless fluid momentum scrolling.",
+    "all_data_testids": "Every key button, link, and interactive widget must have clear kebab-case data-testid tags."
+  }
+}
