@@ -6,6 +6,7 @@ import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/content";
 const LINKS = [
     { label: "Início", href: "#inicio" },
     { label: "Serviços", href: "#servicos" },
+    { label: "Cursos", href: "#cursos" },
     { label: "Sobre", href: "#sobre" },
     { label: "Depoimentos", href: "#depoimentos" },
     { label: "Contato", href: "#contato" },

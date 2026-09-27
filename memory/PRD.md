@@ -30,6 +30,8 @@ Desenvolver a página da empresa "IF Enfermagem", consultoria especializada na �
 7. Contato: endereço + rotas, telefone clicável, horário, mapa embed dark, CTA WhatsApp
 8. Footer com watermark IF gigante, links, Instagram, voltar ao topo; botão flutuante WhatsApp
 9. Lenis smooth scroll + reveals Framer Motion em todas as seções
+10. Seção "Nossos Cursos" (4 cursos com botão "Tenho Interesse" → WhatsApp com mensagem pré-preenchida)
+11. Seção "Nossa Essência" (Missão, Visão e Valores em cards com chips)
 
 ## Verificado
 - curl backend /api/ OK; frontend 200; logo/favicon 200

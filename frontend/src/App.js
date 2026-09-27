@@ -8,7 +8,9 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import EditorialMarquee from "@/components/EditorialMarquee";
 import ServicesBento from "@/components/ServicesBento";
+import CoursesSection from "@/components/CoursesSection";
 import AboutSection from "@/components/AboutSection";
+import EssenceSection from "@/components/EssenceSection";
 import TestimonialsGoogle from "@/components/TestimonialsGoogle";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -70,7 +72,9 @@ function LandingPage() {
                 <Hero onNavigate={scrollTo} />
                 <EditorialMarquee />
                 <ServicesBento />
+                <CoursesSection />
                 <AboutSection />
+                <EssenceSection />
                 <TestimonialsGoogle />
                 <ContactSection />
             </main>

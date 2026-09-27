@@ -82,6 +82,61 @@ export const SERVICES = [
     },
 ];
 
+const waCourse = (title) =>
+    `https://wa.me/5585988885910?text=${encodeURIComponent(
+        `Olá! Tenho interesse no curso "${title}" e gostaria de me inscrever.`,
+    )}`;
+
+export const COURSES = [
+    {
+        id: "praticas-injetaveis",
+        number: "01",
+        title: "Práticas Injetáveis",
+        desc: "Curso destinado a desenvolver competências e habilidades relacionadas a procedimentos injetáveis. Neste curso você desenvolverá suas habilidades para rotinas injetáveis com mais segurança e muita destreza técnica.",
+        image: "https://images.unsplash.com/photo-1542884841-9f546e727bca?q=80&w=1200&auto=format&fit=crop",
+        whatsapp: waCourse("Práticas Injetáveis"),
+    },
+    {
+        id: "ventilacao-mecanica",
+        number: "02",
+        title: "Ventilação Mecânica da Teoria a Prática",
+        desc: "Um curso planejado para ajudar acadêmicos e profissionais da saúde descomplicando o entendimento e o manejo prático para aqueles que apresentam atribuição no manejo da ventilação mecânica.",
+        image: "https://images.unsplash.com/photo-1676281050264-178eff38874a?q=80&w=1200&auto=format&fit=crop",
+        whatsapp: waCourse("Ventilação Mecânica da Teoria a Prática"),
+    },
+    {
+        id: "interpretacao-ecg",
+        number: "03",
+        title: "Interpretação de ECG para Enfermagem do Básico ao Avançado",
+        desc: "Curso destinado a desenvolver competências relacionadas a execução e interpretação do exame ECG. Neste curso você desenvolverá seu raciocínio clínico avançado na interpretação do exame e suas habilidades procedurais na aplicação da técnica do exame ECG.",
+        image: "https://images.unsplash.com/photo-1622115585848-1d5b6e8af4e4?q=80&w=1200&auto=format&fit=crop",
+        whatsapp: waCourse(
+            "Interpretação de ECG para Enfermagem do Básico ao Avançado",
+        ),
+    },
+    {
+        id: "interpretacao-laboratorial",
+        number: "04",
+        title: "Interpretação de Exames Laboratoriais",
+        desc: "Curso destinado a desenvolver competências relacionadas a execução e interpretação de exames laborais. Neste curso você desenvolverá seu raciocínio clínico avançado na interpretação de exames laborais.",
+        image: "https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?q=80&w=1200&auto=format&fit=crop",
+        whatsapp: waCourse("Interpretação de Exames Laboratoriais"),
+    },
+];
+
+export const ESSENCE = {
+    missao:
+        "Promover a qualificação de profissionais e estudantes da saúde para o desenvolvimento de uma assistência e gerenciamento, proporcionando a melhoria no atendimento ao paciente.",
+    visao: "Ser reconhecida em território estadual como uma empresa de serviços educacionais e de consultoria em saúde.",
+    valores: [
+        "Ética",
+        "Humanização no atendimento",
+        "Valorização das pessoas",
+        "Satisfação em atender bem",
+        "Responsabilidade social",
+    ],
+};
+
 export const REVIEWS = [
     {
         id: "ismael-frota",
