@@ -137,6 +137,37 @@ export const ESSENCE = {
     ],
 };
 
+export const TEAM = [
+    {
+        id: "enfermagem-assistencial",
+        role: "Enfermagem Assistencial",
+        desc: "Atendimento especializado e humanizado, do primeiro acolhimento à recuperação.",
+        image:
+            "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+        id: "atendimento-domiciliar",
+        role: "Atendimento Domiciliar",
+        desc: "Cuidado que vai até o paciente, com atenção integral no conforto de casa.",
+        image:
+            "https://images.unsplash.com/photo-1675509682819-d751ae7566c4?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+        id: "educacao-capacitacao",
+        role: "Educação & Capacitação",
+        desc: "Instrutores e facilitadores dos nossos cursos, capacitações e palestras.",
+        image:
+            "https://images.unsplash.com/photo-1770134223774-13b735e29201?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+        id: "consultoria-saude",
+        role: "Consultoria em Saúde",
+        desc: "Gestão estratégica e qualidade para serviços de saúde e enfermagem.",
+        image:
+            "https://images.unsplash.com/photo-1606738132449-e3590ddb6793?q=80&w=1200&auto=format&fit=crop",
+    },
+];
+
 export const REVIEWS = [
     {
         id: "ismael-frota",

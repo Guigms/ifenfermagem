@@ -32,6 +32,7 @@ Desenvolver a página da empresa "IF Enfermagem", consultoria especializada na �
 9. Lenis smooth scroll + reveals Framer Motion em todas as seções
 10. Seção "Nossos Cursos" (4 cursos com botão "Tenho Interesse" → WhatsApp com mensagem pré-preenchida)
 11. Seção "Nossa Essência" (Missão, Visão e Valores em cards com chips)
+12. Seção "Nossa Equipe" (intro do cliente + 4 cards com retratos e frentes de atuação — placeholders até envio de fotos/nomes reais)
 
 ## Verificado
 - curl backend /api/ OK; frontend 200; logo/favicon 200

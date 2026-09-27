@@ -10,6 +10,7 @@ import EditorialMarquee from "@/components/EditorialMarquee";
 import ServicesBento from "@/components/ServicesBento";
 import CoursesSection from "@/components/CoursesSection";
 import AboutSection from "@/components/AboutSection";
+import TeamSection from "@/components/TeamSection";
 import EssenceSection from "@/components/EssenceSection";
 import TestimonialsGoogle from "@/components/TestimonialsGoogle";
 import ContactSection from "@/components/ContactSection";
@@ -74,6 +75,7 @@ function LandingPage() {
                 <ServicesBento />
                 <CoursesSection />
                 <AboutSection />
+                <TeamSection />
                 <EssenceSection />
                 <TestimonialsGoogle />
                 <ContactSection />
