@@ -33,7 +33,7 @@ Desenvolver a página da empresa "IF Enfermagem", consultoria especializada na �
 10. Seção "Nossos Cursos" (4 cursos com botão "Tenho Interesse" → WhatsApp com mensagem pré-preenchida)
 11. Seção "Nossa Essência" (Missão, Visão e Valores em cards com chips)
 12. Seção "Nossa Equipe" (intro do cliente + 4 cards com retratos e frentes de atuação — placeholders até envio de fotos/nomes reais)
-13. Animação de entrada: overlay obsidiana com monograma IF desenhado em traço dourado + nome, saída de cortina; rolagem bloqueada durante a intro; toca 1x por sessão
+13. Animação de entrada: overlay obsidiana com a LOGO OFICIAL revelada (desfoque→foco, varredura de luz dourada, moldura com cantos dourados e linhas que se expandem), saída de cortina; rolagem bloqueada durante a intro; toca 1x por sessão
 14. Notificação por e-mail: modal "Tenho Interesse" (nome + contato) → POST /api/course-interest → grava no MongoDB e envia e-mail à equipe via Resend gerenciado; WhatsApp continua abrindo com mensagem pronta
 
 ## Pendências de credenciais
