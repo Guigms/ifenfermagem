@@ -7,7 +7,8 @@ const LINES = ["A nobreza do cuidar", "com rigor científico", "e sofisticação
 
 const EASE = [0.16, 1, 0.3, 1];
 
-export default function Hero({ onNavigate }) {
+export default function Hero({ onNavigate, start = true }) {
+    const play = start;
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -46,7 +47,11 @@ export default function Hero({ onNavigate }) {
                 <div className="lg:col-span-7">
                     <motion.div
                         initial={{ opacity: 0, y: 18 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={
+                            play
+                                ? { opacity: 1, y: 0 }
+                                : { opacity: 0, y: 18 }
+                        }
                         transition={{ duration: 0.9, delay: 0.05, ease: EASE }}
                         className="mb-8 flex items-center gap-4"
                     >
@@ -65,7 +70,7 @@ export default function Hero({ onNavigate }) {
                                 <motion.span
                                     className="block"
                                     initial={{ y: "115%" }}
-                                    animate={{ y: 0 }}
+                                    animate={play ? { y: 0 } : { y: "115%" }}
                                     transition={{
                                         duration: 1.15,
                                         delay: 0.2 + i * 0.16,
@@ -89,7 +94,11 @@ export default function Hero({ onNavigate }) {
 
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={
+                            play
+                                ? { opacity: 1, y: 0 }
+                                : { opacity: 0, y: 20 }
+                        }
                         transition={{ duration: 1, delay: 0.75, ease: EASE }}
                         className="mt-7 max-w-xl text-base sm:text-lg font-light leading-relaxed text-slate-300"
                     >
@@ -101,7 +110,11 @@ export default function Hero({ onNavigate }) {
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={
+                            play
+                                ? { opacity: 1, y: 0 }
+                                : { opacity: 0, y: 20 }
+                        }
                         transition={{ duration: 1, delay: 0.9, ease: EASE }}
                         className="mt-10 flex flex-wrap items-center gap-4"
                     >
@@ -129,7 +142,7 @@ export default function Hero({ onNavigate }) {
 
                     <motion.div
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        animate={play ? { opacity: 1 } : { opacity: 0 }}
                         transition={{ duration: 1.1, delay: 1.1 }}
                         className="mt-12 flex flex-wrap items-center gap-3"
                     >
@@ -162,7 +175,11 @@ export default function Hero({ onNavigate }) {
                 <div className="lg:col-span-5">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.96, y: 24 }}
-                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        animate={
+                            play
+                                ? { opacity: 1, scale: 1, y: 0 }
+                                : { opacity: 0, scale: 0.96, y: 24 }
+                        }
                         transition={{ duration: 1.3, delay: 0.55, ease: EASE }}
                         className="relative mx-auto max-w-md lg:max-w-none"
                     >
@@ -199,7 +216,7 @@ export default function Hero({ onNavigate }) {
                     onNavigate("#servicos");
                 }}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={play ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ delay: 1.6, duration: 1 }}
                 className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-gold/70 hover:text-gold transition-colors lg:flex"
                 aria-label="Rolar para serviços"

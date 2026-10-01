@@ -1,8 +1,12 @@
+import { useState } from "react";
 import Reveal from "@/components/Reveal";
+import CourseInterestModal from "@/components/CourseInterestModal";
 import { ArrowUpRight } from "lucide-react";
 import { COURSES } from "@/content";
 
 export default function CoursesSection() {
+    const [activeCourse, setActiveCourse] = useState(null);
+
     return (
         <section
             id="cursos"
@@ -41,12 +45,11 @@ export default function CoursesSection() {
                 <div data-testid="courses-list">
                     {COURSES.map((course, i) => (
                         <Reveal key={course.id} delay={i * 0.06} y={26}>
-                            <a
-                                href={course.whatsapp}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <button
+                                type="button"
+                                onClick={() => setActiveCourse(course)}
                                 data-testid={`course-interest-button-${course.id}`}
-                                className="group grid grid-cols-1 items-center gap-6 border-t hairline py-9 transition-colors duration-500 hover:bg-gold/[0.03] md:grid-cols-12 lg:py-10"
+                                className="group grid w-full grid-cols-1 items-center gap-6 border-t hairline py-9 text-left transition-colors duration-500 hover:bg-gold/[0.03] md:grid-cols-12 lg:py-10"
                             >
                                 <span className="hidden font-mono text-sm tracking-[0.2em] text-gold/70 md:col-span-1 md:block">
                                     {course.number}
@@ -77,11 +80,16 @@ export default function CoursesSection() {
                                         <ArrowUpRight size={15} />
                                     </span>
                                 </div>
-                            </a>
+                            </button>
                         </Reveal>
                     ))}
                     <div className="border-t hairline" />
                 </div>
+
+                <CourseInterestModal
+                    course={activeCourse}
+                    onClose={() => setActiveCourse(null)}
+                />
             </div>
         </section>
     );

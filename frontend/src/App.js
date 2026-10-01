@@ -1,7 +1,9 @@
-import { Component } from "react";
+import { Component, useState } from "react";
 import { useEffect, useRef, useCallback } from "react";
+import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 import { MessageCircle } from "lucide-react";
+import { Toaster } from "sonner";
 import "@/App.css";
 
 import Header from "@/components/Header";
@@ -15,6 +17,7 @@ import EssenceSection from "@/components/EssenceSection";
 import TestimonialsGoogle from "@/components/TestimonialsGoogle";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import IntroOverlay from "@/components/IntroOverlay";
 import { WHATSAPP_URL } from "@/content";
 
 class ErrorBoundary extends Component {
@@ -39,6 +42,13 @@ class ErrorBoundary extends Component {
 
 function LandingPage() {
     const lenisRef = useRef(null);
+    const [introDone, setIntroDone] = useState(() => {
+        try {
+            return sessionStorage.getItem("if_intro_seen") === "1";
+        } catch {
+            return false;
+        }
+    });
 
     useEffect(() => {
         const lenis = new Lenis({ duration: 1.25, smoothWheel: true });
@@ -56,6 +66,25 @@ function LandingPage() {
         };
     }, []);
 
+    useEffect(() => {
+        const lenis = lenisRef.current;
+        if (lenis) {
+            if (introDone) lenis.start();
+            else lenis.stop();
+        }
+        document.body.style.overflow = introDone ? "" : "hidden";
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [introDone]);
+
+    const handleIntroDone = useCallback(() => {
+        try {
+            sessionStorage.setItem("if_intro_seen", "1");
+        } catch {}
+        setIntroDone(true);
+    }, []);
+
     const scrollTo = useCallback((hash) => {
         if (lenisRef.current) {
             lenisRef.current.scrollTo(hash, { offset: -70, duration: 1.4 });
@@ -67,10 +96,15 @@ function LandingPage() {
 
     return (
         <div className="relative min-h-screen bg-ink-950 text-slate-50 antialiased">
+            <AnimatePresence>
+                {!introDone && (
+                    <IntroOverlay key="intro" onComplete={handleIntroDone} />
+                )}
+            </AnimatePresence>
             <div className="grain-overlay" aria-hidden="true" />
             <Header onNavigate={scrollTo} />
             <main>
-                <Hero onNavigate={scrollTo} />
+                <Hero onNavigate={scrollTo} start={introDone} />
                 <EditorialMarquee />
                 <ServicesBento />
                 <CoursesSection />
@@ -93,6 +127,8 @@ function LandingPage() {
                 <span className="absolute inset-0 rounded-full border border-gold animate-pulse-ring" />
                 <MessageCircle size={22} />
             </a>
+
+            <Toaster position="top-center" theme="dark" />
         </div>
     );
 }
